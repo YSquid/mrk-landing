@@ -122,3 +122,22 @@ nav img {
     width: 5rem;
     background-color: var(--accent1);
   }
+
+  /* Product Section */
+
+#product {
+    display: flex;
+    padding: 2rem;
+    background-color: var(--bg2);
+}
+
+#product-img {
+    height: 50%;
+    padding-right: 3rem;
+    margin-left: 1rem;
+}
+
+#product-description {
+    margin-left: 10rem;
+}
+  
