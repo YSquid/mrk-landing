@@ -8,21 +8,36 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./index.css" />
+
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <nav>
-        <img src="./assets/Logo.png" alt="" />
-        <ul>
-          <a href=""><li>About</li></a>
-          <a href=""><li>Product</li></a>
-          <a href=""><li>Locations</li></a>
-          <a href=""><li>Contact</li></a>
-        </ul>
+        <div id="nav-img">
+          <img src="./assets/Logo.png" alt="" />
+        </div>
+        <div id="nav-list">
+          <ul>
+            <a href="#about"><li>About</li></a>
+            <a href="#product"><li>Product</li></a>
+            <a href="#locations"><li>Locations</li></a>
+            <a href="#contact"><li>Contact</li></a>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <main>
+      <section id="hero">
+        <img src="./assets/Hero.png" alt="" />
+      </section>
       <section id="about">
         <div id="about-description">
           <p>
@@ -56,45 +71,68 @@
 
       <section id="product">
         <div id="product-img">
-            <img src="./assets/product-placeholder.PNG" alt="Bottle of Full Spectrum CBD Tincture - 30ML" id="tincture-img">
+          <img
+            src="./assets/product-placeholder.PNG"
+            alt="Bottle of Full Spectrum CBD Tincture - 30ML"
+            id="tincture-img"
+          />
         </div>
         <div id="product-description">
-            <h2>Full Spectrem CBD Tincture with MCT - 900mg in 30ML</h2>
-            <h3>Ingredients</h3>
-            <p>Fractionated Coconut Oil (MCT Medium Chain Triglyberides), CO2 Extracted Full Sprectrum Hemp Oil</p>
-            <h3>Benefits and Uses</h3>
-            <ul>
-                <li>Alleviating Joint Pain & Muscle Pain</li>
-                <li>Reducing Anxiety</li>
-                <li>Aiding in Sleep</li>
-                <li>Neuroprotective Properties</li>
-            </ul>
-            <a href="https://www.youtube.com/watch?v=DWDvyrIYvj4"><p>Watch a short video on CBD benefits</p></a>
-            <a href="https://www.healthline.com/nutrition/cbd-oil-benefits#neuroprotection"><p>Read more about CBD benefits</p></a>
+          <h2>Full Spectrem CBD Tincture with MCT - 900mg in 30ML</h2>
+          <h3>Ingredients</h3>
+          <p>
+            Fractionated Coconut Oil (MCT Medium Chain Triglyberides), CO2
+            Extracted Full Sprectrum Hemp Oil
+          </p>
+          <h3>Benefits and Uses</h3>
+          <ul>
+            <li>Alleviating Joint Pain & Muscle Pain</li>
+            <li>Reducing Anxiety</li>
+            <li>Aiding in Sleep</li>
+            <li>Neuroprotective Properties</li>
+          </ul>
+          <a href="https://www.youtube.com/watch?v=DWDvyrIYvj4"
+            ><p>Watch a short video on CBD benefits</p></a
+          >
+          <a
+            href="https://www.healthline.com/nutrition/cbd-oil-benefits#neuroprotection"
+            ><p>Read more about CBD benefits</p></a
+          >
         </div>
       </section>
 
       <section id="locations">
         <div id="locations-title">
-            <h2>Available at these Las Cruces Locations</h2>
+          <h2>Available at these Las Cruces Locations</h2>
         </div>
         <div id="locations-container">
-            <img src="./assets/Sassy.PNG" alt="Sassy Grass Juice Bar Location Info" id="sassy">
-            <img src="./assets/Power.PNG" alt="The Power Nutrition Location Info" id="power">
-            <img src="./assets/Queen-bees.PNG" alt="Queen Bees Location Info" id="queen">
+          <img
+            src="./assets/Sassy.PNG"
+            alt="Sassy Grass Juice Bar Location Info"
+            id="sassy"
+          />
+          <img
+            src="./assets/Power.PNG"
+            alt="The Power Nutrition Location Info"
+            id="power"
+          />
+          <img
+            src="./assets/Queen-bees.PNG"
+            alt="Queen Bees Location Info"
+            id="queen"
+          />
         </div>
-
       </section>
     </main>
     <footer>
-        <section id="contact">
-            <img src="./assets/Logo.png" alt="Mr. K Logo" id="logo-footer">
-            <ul>
-                <li>915-256-0846</li>
-                <li>mrkpremiumresrve@gmail.com</li>
-            </ul>
-            <p>All rights reserved. &copy 2022</p>
-        </section>
+      <section id="contact">
+        <img src="./assets/Logo.png" alt="Mr. K Logo" id="logo-footer" />
+        <ul>
+          <li>915-256-0846</li>
+          <li>mrkpremiumresrve@gmail.com</li>
+        </ul>
+        <p>All rights reserved. &copy 2022</p>
+      </section>
     </footer>
   </body>
 </html>
