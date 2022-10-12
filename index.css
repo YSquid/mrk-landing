@@ -90,11 +90,11 @@ nav img {
 }
 
 #about h2:hover {
-  color: var(--accent3);
+  color: var(--accent1);
 }
 
 #about p:hover {
-  color: var(--accent3);
+  color: var(--accent1);
 }
 
 #about-description {
@@ -116,3 +116,9 @@ nav img {
   height: 5rem;
   width: 5rem;
 }
+
+#about-labels img:hover {
+    height: 5rem;
+    width: 5rem;
+    background-color: var(--accent1);
+  }
