@@ -23,7 +23,7 @@ body {
 /* Nav bar styles */
 
 nav {
-  background-color: var(--bg2);
+  background-color: var(--accent1);
   display: inline-flex;
   width: 100%;
   justify-content: space-between;
@@ -90,11 +90,11 @@ nav img {
 }
 
 #about h2:hover {
-  color: var(--accent1);
+  color: var(--accent3);
 }
 
 #about p:hover {
-  color: var(--accent1);
+  color: var(--accent3);
 }
 
 #about-description {
@@ -117,11 +117,6 @@ nav img {
   width: 5rem;
 }
 
-#about-labels img:hover {
-    height: 5rem;
-    width: 5rem;
-    background-color: var(--accent1);
-  }
 
   /* Product Section */
 
@@ -140,4 +135,89 @@ nav img {
 #product-description {
     margin-left: 10rem;
 }
-  
+
+/* Locations Section */
+
+#locations {
+  background-color: var(--bg1);
+  margin: 0;
+}
+
+#locations-title h2 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+#locations-title h2:hover {
+  color: var(--accent3)
+}
+
+#locations-container {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 2rem;
+}
+
+#locations-cta h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+}
+
+#locations-cta h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+#locations-cta h3:hover {
+  color: var(--accent3)
+}
+
+#locations-cta h4:hover {
+  color: var(--accent3)
+}
+
+/* Contact section */
+
+#contact {
+  background-color: var(--accent1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact img {
+  height: 5rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 10rem;
+}
+
+#contact p {
+  padding-right: 2rem;
+  font-size: 1.5rem;
+}
+
+#contact p:hover {
+  color: var(--accent3)
+}
+
+#contact ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+
+#contact li {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+#contact li:hover {
+  color: var(--accent3)
+}
