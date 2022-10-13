@@ -106,22 +106,13 @@ nav img {
   padding-right: 2rem;
 }
 
-#about-labels {
-  display: flex;
-  flex-direction: column;
-  padding-right: 2rem;
-}
-
-#about-labels img {
-  height: 5rem;
-  width: 5rem;
-}
 
 
   /* Product Section */
 
 #product {
     display: flex;
+    justify-content: space-between;
     padding: 2rem;
     background-color: var(--bg2);
 }
@@ -134,6 +125,36 @@ nav img {
 
 #product-description {
     margin-left: 10rem;
+}
+
+#product-description h2:hover, h3:hover, p:hover, li:hover {
+  color: var(--accent3)
+}
+
+#product-description h2, h3 {
+  font-size: 1.5rem;
+}
+
+#product-description p, li {
+  font-size: 1.25rem;
+}
+
+#product-description a:link {
+  color: var(--accent3)
+}
+
+#product-description a:visited {
+  color: var(--bg1)
+}
+
+#product-labels {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2rem;
+}
+
+#product-labels img {
+  height: 10rem;
 }
 
 /* Locations Section */
