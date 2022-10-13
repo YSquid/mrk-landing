@@ -56,6 +56,18 @@ nav img {
   padding-bottom: 0.5rem;
 }
 
+#nav-left {
+  display: flex;
+  align-items: center;
+}
+
+#nav-socials {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  font-size: 1.7rem;
+}
+
 #nav-list {
   display: flex;
   align-items: end;
@@ -217,7 +229,6 @@ nav img {
   padding-left: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  padding-right: 10rem;
 }
 
 #contact p {
@@ -244,4 +255,29 @@ nav img {
 
 #contact li:hover {
   color: var(--accent3)
+}
+
+#contact-left {
+  display: flex;
+  align-items: center;
+}
+
+#contact-socials {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  font-size: 1.7rem;
+}
+
+#contact-socials a:link {
+  color: var(--accent3);
+}
+
+#contact-socials a:visited {
+  color: var(--bg1);
+  text-decoration: none;
+}
+
+#contact-socials a:hover {
+  color: var(--accent3);
 }
