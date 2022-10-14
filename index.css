@@ -1,12 +1,13 @@
 /*Universal Setup */
 :root {
-  --bg1: #b9a44c;
-  --bg2: #566e3d;
+  --bg1: #A4C4A3;
+  --bg2: #DBD3C9;
   --accent1: #1c531a;
   --accent2: #c1c172;
   --accent3: #091f92;
   --main-text: white;
   --alt-text: black;
+  --radius: 3rem;
 }
 
 html,
@@ -16,7 +17,7 @@ body {
   margin: 0;
   padding: 0px;
   overflow-x: hidden;
-  background-color: var(--main-bg);
+  background-image: url('./assets/cool-background.png');
   font-family: "Roboto", sans-serif;
 }
 
@@ -85,7 +86,7 @@ nav img {
 #hero {
   margin: 0;
   height: fit-content;
-  background-color: var(--bg1);
+  background-image: url('./assets/cool-background.png');
 }
 
 #hero img {
@@ -97,7 +98,8 @@ nav img {
 
 #about {
   background-color: var(--bg1);
-  margin: 0 auto;
+  margin: 5rem 10rem;
+  border-radius: var(--radius);
   display: flex;
 }
 
@@ -126,7 +128,9 @@ nav img {
     display: flex;
     justify-content: space-between;
     padding: 2rem;
-    background-color: var(--bg2);
+    background-color: var(--bg1);
+    margin: 5rem 10rem;
+    border-radius: var(--radius);
 }
 
 #product-img {
@@ -173,7 +177,8 @@ nav img {
 
 #locations {
   background-color: var(--bg1);
-  margin: 0;
+  margin: 5rem 10rem;
+  border-radius: var(--radius);
 }
 
 #locations-title h2 {
