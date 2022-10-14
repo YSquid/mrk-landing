@@ -1,12 +1,10 @@
 /*Universal Setup */
 :root {
-  --bg1: #A4C4A3;
-  --bg2: #DBD3C9;
+  --bg1: #77aa76;
   --accent1: #1c531a;
   --accent2: #c1c172;
   --accent3: #091f92;
   --main-text: white;
-  --alt-text: black;
   --radius: 3rem;
 }
 
@@ -35,7 +33,7 @@ nav a:link {
 }
 
 nav a:visited {
-  color: var(--bg1);
+  color: var(--accent2);
   text-decoration: none;
 }
 
@@ -160,7 +158,7 @@ nav img {
 }
 
 #product-description a:visited {
-  color: var(--bg1)
+  color: purple
 }
 
 #product-labels {
@@ -239,7 +237,7 @@ nav img {
 #contact p {
   padding-right: 2rem;
   font-size: 1.5rem;
-  color: var(--bg1);
+  color: var(--accent2);
 }
 
 #contact p:hover {
@@ -255,7 +253,7 @@ nav img {
 #contact li {
   padding: 1rem;
   font-size: 1.5rem;
-  color: var(--bg1);
+  color: var(--accent2);
 }
 
 #contact li:hover {
@@ -279,7 +277,7 @@ nav img {
 }
 
 #contact-socials a:visited {
-  color: var(--bg1);
+  color: var(--accent2);
   text-decoration: none;
 }
 
