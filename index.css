@@ -151,6 +151,11 @@ nav img {
 
 #product-description p, li {
   font-size: 1.25rem;
+  list-style: none;
+}
+
+#product-description li::before {
+  content: '✓ ';
 }
 
 #product-description a:link {
@@ -272,15 +277,17 @@ nav img {
   font-size: 1.7rem;
 }
 
-#contact-socials a:link {
+#contact a:link {
   color: var(--accent3);
+  text-decoration: none;
 }
 
-#contact-socials a:visited {
+#contact a:visited {
   color: var(--accent2);
   text-decoration: none;
 }
 
-#contact-socials a:hover {
+#contact a:hover {
   color: var(--accent3);
+  text-decoration: none;
 }
