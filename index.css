@@ -145,8 +145,10 @@ nav img {
   color: var(--accent3)
 }
 
-#product-description h2, h3 {
-  font-size: 1.5rem;
+#product-description h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding-right: 20rem;
 }
 
 #product-description p, li {
