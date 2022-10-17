@@ -141,6 +141,7 @@ nav img {
     background-color: var(--bg1);
     width: 90%;
     border-radius: var(--radius);
+    max-height: 80vh;
 }
 
 #product-title {
