@@ -329,6 +329,7 @@ nav img {
 
 /* Contact section */
 
+
 #contact {
   background-color: var(--accent1);
   display: flex;
@@ -394,4 +395,16 @@ nav img {
 #contact a:hover {
   color: var(--accent3);
   text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+
+  #contact {
+    flex-direction: column;
+  }
+
+  #contact ul a {
+    padding-right: 1rem;
+    margin-right: 1rem;
+  }
 }
