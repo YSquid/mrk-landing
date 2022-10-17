@@ -265,8 +265,9 @@ nav img {
 
 #locations {
   background-color: var(--bg1);
-  margin: 5rem 10rem;
+  margin: 1rem auto;
   border-radius: var(--radius);
+  width: 90%;
 }
 
 #locations-title h2 {
@@ -283,6 +284,7 @@ nav img {
 
 #locations-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding-bottom: 2rem;
 }
