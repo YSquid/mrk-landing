@@ -1,12 +1,11 @@
 /*Universal Setup */
 :root {
-  --bg1: #b9a44c;
-  --bg2: #566e3d;
+  --bg1: #77aa76;
   --accent1: #1c531a;
   --accent2: #c1c172;
   --accent3: #091f92;
   --main-text: white;
-  --alt-text: black;
+  --radius: 3rem;
 }
 
 html,
@@ -16,7 +15,7 @@ body {
   margin: 0;
   padding: 0px;
   overflow-x: hidden;
-  background-color: var(--main-bg);
+  background-image: url('./assets/cool-background.png');
   font-family: "Roboto", sans-serif;
 }
 
@@ -34,7 +33,7 @@ nav a:link {
 }
 
 nav a:visited {
-  color: var(--bg1);
+  color: var(--accent2);
   text-decoration: none;
 }
 
@@ -80,12 +79,18 @@ nav img {
   justify-content: space-around;
 }
 
+@media only screen and (max-width: 680px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 /*Hero image */
 
 #hero {
   margin: 0;
   height: fit-content;
-  background-color: var(--bg1);
+  background-image: url('./assets/cool-background.png');
 }
 
 #hero img {
@@ -97,8 +102,10 @@ nav img {
 
 #about {
   background-color: var(--bg1);
-  margin: 0 auto;
+  margin: 1rem auto;
+  border-radius: var(--radius);
   display: flex;
+  width: 90%;
 }
 
 #about h2:hover {
@@ -118,37 +125,87 @@ nav img {
   padding-right: 2rem;
 }
 
+@media only screen and (max-width: 500px) {
+  #about-description {
+    font-size: 1.2rem;
+  }
+}
 
 
   /* Product Section */
 
 #product {
     display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-    background-color: var(--bg2);
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: var(--bg1);
+    width: 90%;
+    border-radius: var(--radius);
+    max-height: 80vh;
 }
+
+#product-title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#product-container {
+  display: flex;
+  max-height: 70%;
+  overflow: hidden;
+  margin: 2rem;
+  box-sizing: border-box;
+}
+
 
 #product-img {
-    height: 50%;
-    padding-right: 3rem;
-    margin-left: 1rem;
+  display: flex;
+  max-width: 50%;
+  max-height: 80%;
+  margin-right: 1rem;
+  min-width: 0;
+  flex: 1 1 0;
 }
 
+#product-labels {
+  max-width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#bottle {
+  max-width: 50%;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
 #product-description {
-    margin-left: 10rem;
+    margin: 0 auto;
+    max-width: 70%;
 }
 
 #product-description h2:hover, h3:hover, p:hover, li:hover {
   color: var(--accent3)
 }
 
-#product-description h2, h3 {
-  font-size: 1.5rem;
+#product-description h2 {
+  font-size: 2rem;
+  text-align: center;
 }
 
 #product-description p, li {
   font-size: 1.25rem;
+  list-style: none;
+}
+
+#product-description li::before {
+  content: '✓ ';
 }
 
 #product-description a:link {
@@ -156,24 +213,60 @@ nav img {
 }
 
 #product-description a:visited {
-  color: var(--bg1)
+  color: purple
 }
 
-#product-labels {
-  display: flex;
-  flex-direction: column;
-  padding-right: 2rem;
-}
 
 #product-labels img {
-  height: 10rem;
+  height: 33%;
+}
+
+
+
+@media only screen and (max-width: 830px) {
+
+  #product {
+    max-height: 80vh;
+  }
+
+  #product-description {
+    max-width: 70%;
+  }
+
+  #product-img {
+    flex-direction: column;
+  }
+
+  #product-labels {
+    flex-direction: row;
+    max-width: 100%;
+    flex-wrap: wrap;
+    height: 40%;
+  }
+
+  #product-labels img {
+    height: 25%;
+  }
+
+  #bottle {
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #product-description h3 {
+    font-size: 1.1rem;
+  }
+  #product-description p, ul, li {
+    font-size: 0.9rem;
+  }
 }
 
 /* Locations Section */
 
 #locations {
   background-color: var(--bg1);
-  margin: 0;
+  margin: 5rem 10rem;
+  border-radius: var(--radius);
 }
 
 #locations-title h2 {
@@ -234,7 +327,7 @@ nav img {
 #contact p {
   padding-right: 2rem;
   font-size: 1.5rem;
-  color: var(--bg1);
+  color: var(--accent2);
 }
 
 #contact p:hover {
@@ -250,7 +343,7 @@ nav img {
 #contact li {
   padding: 1rem;
   font-size: 1.5rem;
-  color: var(--bg1);
+  color: var(--accent2);
 }
 
 #contact li:hover {
@@ -269,15 +362,17 @@ nav img {
   font-size: 1.7rem;
 }
 
-#contact-socials a:link {
+#contact a:link {
   color: var(--accent3);
-}
-
-#contact-socials a:visited {
-  color: var(--bg1);
   text-decoration: none;
 }
 
-#contact-socials a:hover {
+#contact a:visited {
+  color: var(--accent2);
+  text-decoration: none;
+}
+
+#contact a:hover {
   color: var(--accent3);
+  text-decoration: none;
 }
