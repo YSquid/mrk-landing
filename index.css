@@ -153,7 +153,7 @@ nav img {
   display: flex;
   max-height: 70%;
   overflow: hidden;
-  margin: 2rem;
+  margin: 1rem;
   box-sizing: border-box;
 }
 
@@ -188,6 +188,7 @@ nav img {
 #product-description {
     margin: 0 auto;
     max-width: 70%;
+    height: fit-content;
 }
 
 #product-description h2:hover, h3:hover, p:hover, li:hover {
@@ -259,14 +260,31 @@ nav img {
   #product-description p, ul, li {
     font-size: 0.9rem;
   }
+
+  #product-description {
+    overflow: scroll;
+  }
 }
 
+@media only screen and (max-width: 360px) {
+  #benefits-article {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 667px) {
+
+  #benefits-list {
+    display: none
+  }
+}
 /* Locations Section */
 
 #locations {
   background-color: var(--bg1);
-  margin: 5rem 10rem;
+  margin: 1rem auto;
   border-radius: var(--radius);
+  width: 90%;
 }
 
 #locations-title h2 {
@@ -283,6 +301,7 @@ nav img {
 
 #locations-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding-bottom: 2rem;
 }
@@ -309,6 +328,7 @@ nav img {
 }
 
 /* Contact section */
+
 
 #contact {
   background-color: var(--accent1);
@@ -375,4 +395,16 @@ nav img {
 #contact a:hover {
   color: var(--accent3);
   text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+
+  #contact {
+    flex-direction: column;
+  }
+
+  #contact ul a {
+    padding-right: 1rem;
+    margin-right: 1rem;
+  }
 }
