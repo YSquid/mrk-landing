@@ -141,7 +141,6 @@ nav img {
     background-color: var(--bg1);
     width: 90%;
     border-radius: var(--radius);
-    max-height: 80vh;
 }
 
 #product-title {
@@ -151,46 +150,43 @@ nav img {
 
 #product-container {
   display: flex;
+  max-height: 70%;
+  overflow: hidden;
+  margin: 2rem;
+  box-sizing: border-box;
 }
 
-#product-flex {
-  display: flex;
-}
 
 #product-img {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 25%;
+  max-width: 50%;
+  max-height: 80%;
+  margin-right: 1rem;
+  min-width: 0;
+  flex: 1 1 0;
 }
 
-#product-img img {
-  margin: 1rem auto;
-  max-width: 100%;
-  min-width: 10rem;
-  height: auto;
+#product-labels {
+  max-width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
-@media only screen and (max-width: 1400px) {
-  #product-img img {
-    height: 75%;
-  }
+
+#bottle {
+  max-width: 50%;
+  box-sizing: border-box;
 }
 
-@media only screen and (max-width: 1000px) {
-  #product-flex {
-    flex-direction: column;
-  }
 
-  #product-labels {
-    display: none;
-  }
-}
+
+
 
 
 #product-description {
     margin: 0 auto;
-    max-width: 60%;
+    max-width: 70%;
 }
 
 #product-description h2:hover, h3:hover, p:hover, li:hover {
@@ -219,15 +215,49 @@ nav img {
   color: purple
 }
 
-#product-labels {
-  display: flex;
-  flex-direction: column;
-  padding-right: 2rem;
-  max-width: 15%;
-}
 
 #product-labels img {
-  height: 10rem;
+  height: 33%;
+}
+
+
+
+@media only screen and (max-width: 830px) {
+
+  #product {
+    max-height: 80vh;
+  }
+
+  #product-description {
+    max-width: 70%;
+  }
+
+  #product-img {
+    flex-direction: column;
+  }
+
+  #product-labels {
+    flex-direction: row;
+    max-width: 100%;
+    flex-wrap: wrap;
+    height: 40%;
+  }
+
+  #product-labels img {
+    height: 25%;
+  }
+
+  #bottle {
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #product-description h3 {
+    font-size: 1.1rem;
+  }
+  #product-description p, ul, li {
+    font-size: 0.9rem;
+  }
 }
 
 /* Locations Section */
