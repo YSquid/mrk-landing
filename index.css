@@ -306,6 +306,10 @@ nav img {
   padding-bottom: 2rem;
 }
 
+.location-container {
+  display: flex;
+}
+
 #locations-cta h3 {
   text-align: center;
   font-size: 2rem;

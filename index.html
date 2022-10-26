@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./index.css" />
 
     <!--favicon imports-->
-    <link rel="icon" type="image/png" href="/assets/GMP-FI-32.png">
+    <link rel="icon" type="image/png" href="/assets/GMP-FI-32.png" />
 
     <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -69,12 +69,12 @@
           </p>
         </div>
       </section>
-      <!--Maybe try putting the product image and labels in one div on left side, then info on the right. Flex row, but changes to column on small screens-->
       <section id="product">
         <div id="product-title"><h2>Product</h2></div>
         <div id="product-container">
           <div id="product-img">
-            <img id="bottle"
+            <img
+              id="bottle"
               src="./assets/product-placeholder.PNG"
               alt="Bottle of Full Spectrum CBD Tincture - 30ML"
               id="tincture-img"
@@ -97,31 +97,33 @@
               />
             </div>
           </div>
-            <div id="product-description">
-              <h3>Full Spectrem CBD Tincture with MCT - 900mg in 30ML</h3>
-              <h3>Ingredients</h3>
-              <p>Fractionated Coconut Oil (MCT Medium Chain Triglyberides), CO2 Extracted Full Sprectrum Hemp Oil</p>
-              <h3 id="benefits-title">Benefits and Uses</h3>
-              <ul id="benefits-list">
-                <li>Alleviating Joint Pain & Muscle Pain</li>
-                <li>Reducing Anxiety</li>
-                <li>Aiding in Sleep</li>
-                <li>Neuroprotective Properties</li>
-              </ul>
-              <a
-                href="https://www.youtube.com/watch?v=DWDvyrIYvj4"
-                target="_blank"
-                id="benefits-video"
-                ><p>Watch a short video on CBD benefits</p></a
-              >
-              <a
-                href="https://www.healthline.com/nutrition/cbd-oil-benefits#neuroprotection"
-                target="_blank"
-                id="benefits-article"
-                ><p>Read more about CBD benefits</p></a
-              >
-            </div>
-           
+          <div id="product-description">
+            <h3>Full Spectrem CBD Tincture with MCT - 900mg in 30ML</h3>
+            <h3>Ingredients</h3>
+            <p>
+              Fractionated Coconut Oil (MCT Medium Chain Triglyberides), CO2
+              Extracted Full Sprectrum Hemp Oil
+            </p>
+            <h3 id="benefits-title">Benefits and Uses</h3>
+            <ul id="benefits-list">
+              <li>Alleviating Joint Pain & Muscle Pain</li>
+              <li>Reducing Anxiety</li>
+              <li>Aiding in Sleep</li>
+              <li>Neuroprotective Properties</li>
+            </ul>
+            <a
+              href="https://www.youtube.com/watch?v=DWDvyrIYvj4"
+              target="_blank"
+              id="benefits-video"
+              ><p>Watch a short video on CBD benefits</p></a
+            >
+            <a
+              href="https://www.healthline.com/nutrition/cbd-oil-benefits#neuroprotection"
+              target="_blank"
+              id="benefits-article"
+              ><p>Read more about CBD benefits</p></a
+            >
+          </div>
         </div>
       </section>
 
@@ -130,21 +132,51 @@
           <h2>Available at these Las Cruces Locations</h2>
         </div>
         <div id="locations-container">
-          <img
-            src="./assets/Sassy.PNG"
-            alt="Sassy Grass Juice Bar Location Info"
-            id="sassy"
-          />
-          <img
-            src="./assets/Power.PNG"
-            alt="The Power Nutrition Location Info"
-            id="power"
-          />
-          <img
-            src="./assets/Queen-bees.PNG"
-            alt="Queen Bees Location Info"
-            id="queen"
-          />
+          <div class="location-container">
+            <div class="location-logo">
+              <img
+                src="./assets/Sassy.PNG"
+                alt="Sassy Grass Juice Bar Location Info"
+                id="sassy"
+              />
+            </div>
+
+            <div class="location-address">
+              <h3>Sassy Grass Juice Bar</h3>
+              <h4>3100 W. Pichaco Ave.</h4>
+              <h4>Las Cruces, NM</h4>
+            </div>
+          </div>
+
+          <div class="location-container">
+            <div class="location-logo">
+              <img
+                src="./assets/Power.PNG"
+                alt="The Power Nutrition Location Info"
+                id="power"
+              />
+            </div>
+            <div class="location-address">
+              <h3>The Power Nutrition</h3>
+              <h4>902 Pinion St.</h4>
+              <h4>Las Cruces, NM</h4>
+            </div>
+          </div>
+
+          <div class="location-container">
+            <div class="location-logo">
+              <img
+                src="./assets/Queen-bees.PNG"
+                alt="Queen Bees Location Info"
+                id="queen"
+              />
+            </div>
+            <div class="location-address">
+              <h3>Queen Bee's Gallery</h3>
+              <h4>600 S. Solano Dr.</h4>
+              <h4>Las Cruces, NM</h4>
+            </div>
+          </div>
         </div>
         <div id="locations-cta">
           <h3>Want to become a Mr. K CDB Vendor?</h3>
@@ -169,7 +201,6 @@
           </div>
         </div>
         <ul>
-          
           <a href="mailto:mrkpremiumresrve@gmail.com" target="_blank"
             ><li>
               <i class="fa-solid fa-envelope"></i> mrkpremiumresrve@gmail.com
