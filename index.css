@@ -195,12 +195,8 @@ nav img {
   content: '✓ ';
 }
 
-#product-description a:link {
-  color: var(--accent3)
-}
-
-#product-description a:visited {
-  color: purple
+#product-description a:hover {
+  color: var(--main-text)
 }
 
 
