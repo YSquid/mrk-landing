@@ -331,6 +331,11 @@ nav img {
   padding-bottom: 1rem;
 }
 
+
+.location-address h3 a:hover, .location-address h4 a:hover {
+  color: var(--main-text);
+}
+
 /* Contact section */
 
 
