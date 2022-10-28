@@ -85,21 +85,20 @@ nav img {
     align-items: center;
   }
 }
-/*Hero image */
+/*title image */
 
-
-
-#hero {
-  position: relative;
-  margin: 0;
-  height: fit-content;
-  background-image: url('./assets/cool-background.png');
-}
-
-#hero img {
-  width: 100%;
+#title {
+  width: 90%;
   margin: 0 auto;
+  display: flex;
+  padding: 1rem;
 }
+#title img {
+  margin: 0 auto;
+  border-radius: var(--radius);
+  max-width: 90%;
+}
+
 
 /*About section*/
 
