@@ -87,7 +87,10 @@ nav img {
 }
 /*Hero image */
 
+
+
 #hero {
+  position: relative;
   margin: 0;
   height: fit-content;
   background-image: url('./assets/cool-background.png');
