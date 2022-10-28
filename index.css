@@ -287,12 +287,12 @@ nav img {
   width: 90%;
 }
 
-#locations-title h2 {
-  margin-top: 0;
+#locations-title {
+  margin-top: 0.5rem;
   margin-bottom: 2rem;
-  padding-top: 1rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.75rem;
+  padding: 0.5rem
 }
 
 #locations-title h2:hover {
@@ -306,14 +306,31 @@ nav img {
   padding-bottom: 2rem;
 }
 
+.location-logo {
+  height: auto;
+}
+
+.location-logo img{
+  max-width: 100%;
+  height: 100%;
+}
+
 .location-container {
   display: flex;
+  flex-direction: column;
+  width: 33%;
+  align-items: center;
+  padding: 0.5rem
+}
+
+#locations-cta {
+  padding: 1rem;
 }
 
 #locations-cta h3 {
   text-align: center;
   font-size: 2rem;
-  margin: 0;
+  margin: 0 0 0.5rem 0;
 }
 
 #locations-cta h4 {
