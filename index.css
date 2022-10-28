@@ -278,6 +278,18 @@ nav img {
     display: none
   }
 }
+
+@media only screen and (min-width: 1500px) {
+  
+  #product-img {
+    margin: 0 2rem 0 auto;
+    max-width: 20%;
+  }
+
+  #product-description {
+    margin-left: 0
+  }
+}
 /* Locations Section */
 
 #locations {
