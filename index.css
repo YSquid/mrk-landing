@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0px;
   overflow-x: hidden;
-  background-image: url('./assets/cool-background.png');
+  background-image: linear-gradient(to right, #dcecfc,#e4fcec,#dcf4f4,#dce4fc,#e4fce4,#e4f4ee);
   font-family: "Roboto", sans-serif;
 }
 
