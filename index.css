@@ -93,6 +93,7 @@ nav img {
   margin: 0 auto;
   display: flex;
   padding: 1rem 0;
+  filter: drop-shadow(0.4rem 0.4rem 0.3rem black);
 }
 #title img {
   margin: 0 auto;
@@ -105,10 +106,11 @@ nav img {
 
 #about {
   background-color: var(--bg1);
-  margin: 1rem auto;
+  margin: 1.5rem auto;
   border-radius: var(--radius);
   display: flex;
   width: 90%;
+  filter: drop-shadow(0.5rem 0.5rem 0.5rem var(--accent1));
 }
 
 #about-description {
@@ -131,11 +133,12 @@ nav img {
 #product {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 1.5rem auto;
     background-color: var(--bg1);
     width: 90%;
     border-radius: var(--radius);
     max-height: 80vh;
+    filter: drop-shadow(0.5rem 0.5rem 0.5rem var(--accent1));
 }
 
 #product-title {
@@ -281,9 +284,10 @@ nav img {
 
 #locations {
   background-color: var(--bg1);
-  margin: 1rem auto;
+  margin: 1.5rem auto;
   border-radius: var(--radius);
   width: 90%;
+  filter: drop-shadow(0.5rem 0.5rem 0.5rem var(--accent1));
 }
 
 #locations-title {
@@ -415,5 +419,10 @@ nav img {
   #contact ul a {
     padding-right: 1rem;
     margin-right: 1rem;
+  }
+
+  #contact p {
+    text-align: center;
+    padding: 0;
   }
 }
