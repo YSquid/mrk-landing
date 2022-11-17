@@ -162,7 +162,8 @@ nav img {
 }
 
 #product-labels {
-  max-width: 50%;
+  max-width: 40%;
+  max-height: 80%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -170,7 +171,8 @@ nav img {
 
 
 #bottle {
-  max-width: 50%;
+  max-width: 60%;
+  max-height: 80%;
   box-sizing: border-box;
 }
 
@@ -223,7 +225,7 @@ nav img {
     flex-direction: row;
     max-width: 100%;
     flex-wrap: wrap;
-    height: 40%;
+    max-height: 50%;
   }
 
   #product-labels img {
@@ -234,7 +236,7 @@ nav img {
     max-width: 80%;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 550px) {
   #product-description h3 {
     font-size: 1.1rem;
   }
@@ -244,6 +246,10 @@ nav img {
 
   #product-description {
     overflow: scroll;
+  }
+
+  #NonGMO {
+    padding-left: 0.11rem;
   }
 }
 
