@@ -137,7 +137,7 @@ nav img {
     background-color: var(--bg1);
     width: 90%;
     border-radius: var(--radius);
-    max-height: 80vh;
+    max-height: 120vh;
     filter: drop-shadow(0.5rem 0.5rem 0.5rem var(--accent1));
 }
 
@@ -210,10 +210,10 @@ nav img {
 
 
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 800px) {
 
   #product {
-    max-height: 80vh;
+    max-height: 120vh;
   }
 
   #product-description {
