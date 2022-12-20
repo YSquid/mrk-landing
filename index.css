@@ -305,6 +305,8 @@ nav img {
 }
 
 .location-logo img{
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
